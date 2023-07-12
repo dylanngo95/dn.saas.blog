@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+    <!-- Block stylesheets -->
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+        <!-- Bootstrap Css -->
+        <link href="{{ asset('bundles/admin/css/bootstrap.min.cs') }}s" id="bootstrap-style" rel="stylesheet"
+              type="text/css"/>
+        <!-- Icons Css -->
+        <link href="{{ asset('bundles/admin/css/icons.min.css') }}" rel="stylesheet" type="text/css"/>
+        <!-- App Css-->
+        <link href="{{ asset('bundles/admin/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css"/>
+    {% endblock %}
+
+    <!-- Block javascripts -->
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+    {% endblock %}
+    <!-- Block meta -->
+    {% block meta %}
+        <meta charset="utf-8"/>
+        <!-- Block title -->
+        <title>{% block title %}Admin{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content=Admin" name="description"/>
+        <meta content="Dylan" name="author"/>
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="{{ asset('/bundles/admin/images/favicon.ico') }}">
+    {% endblock %}
+</head>
+<body data-sidebar="dark">
+
+<!-- Block body -->
+{% block body %}{% endblock %}
+<!-- Block lazy_css -->
+{% block lazy_css %}{% endblock %}
+<!-- Block lazy_scripts -->
+{% block lazy_scripts %}{% endblock %}
+
+</body>
+</html>

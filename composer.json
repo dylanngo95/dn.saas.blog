@@ -51,7 +51,8 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "App\\": "src/",
+            "Dn\\Saas\\Admin\\": "bundles/Dn/Saas/Admin/src/"
         }
     },
     "autoload-dev": {

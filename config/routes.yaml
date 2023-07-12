@@ -3,3 +3,9 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+admin_bundle:
+    resource:
+        path: ../bundles/Dn/Saas/Admin/src/Controller/
+        namespace: Dn\Saas\Admin\Controller
+    type: attribute
