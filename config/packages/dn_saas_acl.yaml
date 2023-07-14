@@ -1,3 +1,3 @@
-dn_saas_admin:
+dn_saas_acl:
   config:
-    email: 'it.tinhngo@gmail.com'
+    enable: true
